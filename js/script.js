@@ -12,7 +12,7 @@ var app = new Vue ({
 
             {
                 name: 'Michele', 
-                avatar: 'avatar_1.jpg', 
+                avatar: '../img/avatar_1.jpg', 
                 visibile: true, 
                 message: [
                     {
@@ -36,7 +36,7 @@ var app = new Vue ({
 
             {
                 name: 'Fabio', 
-                avatar: 'avatar_2.jpg', 
+                avatar: './img/avatar_1.jpg', 
                 visible: true, 
                 messages: [
                     {
