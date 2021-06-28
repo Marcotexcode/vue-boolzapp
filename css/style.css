@@ -81,7 +81,32 @@ body {
 /* NOTIFICHE */
 .notific-sx {
     background-color: #8edafc;
+    display: flex;
+    align-items: center;
 }
+
+.notific-sx i {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 90%;
+    margin: 0px 10px;
+    color: #8edafc;
+}
+
+.text-notif-sx a {
+    display: block;
+    color: #4f7485;
+}
+
+
+
+
+
+
+
+
+
 
 /* RICERCA CONTATTI */
 .searc-sx {
