@@ -169,6 +169,11 @@ body {
     justify-content: space-between;
 }
 
+
+
+
+
+/* NOME UTENTE IN CONVERSAZIONE */
 .text-utente span{
     color: #6b7376;
 }
@@ -181,4 +186,44 @@ body {
     margin: 0px 7px;
     color: #b1b1b1;
     font-size: 30px;
+}
+
+
+
+
+/* PARTE MESSAGGI INVIATI */
+.mess-inv {
+    background-image: url(../img/mine.jpg);
+    width: 100%;
+    height: calc(100% - 85px - 60px);
+    overflow-y: scroll;
+}
+
+
+
+
+
+ /* FORM MESSAGGI DA INVIARE  */
+.form-inv form {
+    width: 100%;
+    height: 60px;
+    background-color: #f3eeea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form-inv form i {
+    font-size: 30px;
+    color: #6b7376;
+    margin: 0px 20px;
+}
+
+.form-inv form input {
+    width: 85%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
 }
