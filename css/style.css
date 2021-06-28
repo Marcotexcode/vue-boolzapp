@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 1200px;
     height: 90vh;
     background: red;
     margin: 0 auto;
@@ -192,13 +192,53 @@ body {
 
 
 
-/* PARTE MESSAGGI INVIATI */
-.mess-inv {
+/* PARTE MESSAGGI GENERALI */
+.mess-gen {
     background-image: url(../img/mine.jpg);
     width: 100%;
     height: calc(100% - 85px - 85px);
     overflow-y: scroll;
+    padding: 40px;
 }
+
+
+
+/* messaggi invitai */
+.mess-inviati span, .mess-ricevuti span {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.mess-inviati span p, .mess-ricevuti span p {
+    font-size: 10px;
+    float: right;
+    margin-top: 30px;
+    color: #b1b1b1;
+}
+
+.mess-inviati {
+    display: flex;
+    flex-direction: column;
+}
+
+.mess-inviati span {
+    background-color: rgb(188, 245, 188);
+    margin-left: auto; 
+}
+
+.mess-ricevuti {
+    display: flex;
+    flex-direction: column;
+}
+
+.mess-ricevuti span {
+    background-color: white;
+}
+
+
+
 
 
 
