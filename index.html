@@ -63,7 +63,7 @@
             <div class="contatti">
                 
                 <div v-for="elementi in contacts" class="utente-sx elen-contact">
-                    <img src="{{elementi.avatar}}" alt="">
+                    <img :src="{{elementi.avatar}}" alt="">
                     <h4>{{elementi.name}}</h4>
                 </div>
 
