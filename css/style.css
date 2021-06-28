@@ -111,9 +111,38 @@ body {
 /* RICERCA CONTATTI */
 .searc-sx {
     width: 100%;
-    height: 50px;
     background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+
+.searc-sx form {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.searc-sx form i {
+    color: #b6b9bf;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.searc-sx form input {
+    width: 90%;
+    border: none;
+}
+
+
+
+
+
+
+
 
 /* ELENCO CONTATTI */
 .contatti {
