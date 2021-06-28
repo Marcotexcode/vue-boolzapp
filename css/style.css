@@ -13,6 +13,7 @@
 
 body {
     background-color: rgb(104, 104, 104);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .container {
@@ -43,7 +44,39 @@ body {
 .head-sx {
     background-color: #eaeaea;
     border-right: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
 }
+
+.utente-sx {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.utente-sx img {
+    width: 65px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.utente-dx {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.utente-dx i {
+    margin: 0px 7px;
+    color: #b1b1b1;
+    font-size: 30px;
+}
+
+
+
+
+
+
 
 /* NOTIFICHE */
 .notific-sx {
