@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 /* GENERALE */
 .head-sx, .head-dx, .notific-sx {
     width: 100%;
@@ -25,6 +29,10 @@ body {
     display: flex;
 }
 
+
+
+
+
 /* COLONNE */
 .col-sx {
     width: 35%;
@@ -37,6 +45,8 @@ body {
     height: 100%;
     background-color: green;
 }
+
+
 
 
 
@@ -75,9 +85,6 @@ body {
 
 
 
-
-
-
 /* NOTIFICHE */
 .notific-sx {
     background-color: #8edafc;
@@ -98,11 +105,6 @@ body {
     display: block;
     color: #4f7485;
 }
-
-
-
-
-
 
 
 
@@ -142,9 +144,6 @@ body {
 
 
 
-
-
-
 /* ELENCO CONTATTI */
 .contatti {
     width: 100%;
@@ -162,6 +161,24 @@ body {
 
 
 
+/* COLONNA DESTRA */
 .head-dx {
     background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-utente span{
+    color: #6b7376;
+}
+
+.icon-utente-dx {
+    padding: 10px;
+}
+
+.icon-utente-dx i {
+    margin: 0px 7px;
+    color: #b1b1b1;
+    font-size: 30px;
 }
