@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Boolzapp</title>
 </head>
 <body>
     
 
-    <div class="container">
+    <div id="app" class="container">
 
         <!-- COLONNA SINISTRA  -->
         <div class="col-sx">
@@ -60,11 +61,16 @@
 
             <!-- ELENCO CONTATTI  -->
             <div class="contatti">
-                <div class="utente-sx elen-contact">
-                    <img src="img/avatar_1.jpg" alt="">
-                    <h4>Michele</h4>
+                
+                <div v-for="contacts in contacts" class="utente-sx elen-contact">
+                    <img src="{{avatar}}" alt="">
+                    <h4>{{name}}</h4>
                 </div>
-                <div class="utente-sx elen-contact">
+
+
+
+
+                <!-- <div class="utente-sx elen-contact">
                     <img src="img/avatar_2.jpg" alt="">
                     <h4>Fabio</h4>
                 </div>
@@ -75,7 +81,7 @@
                 <div class="utente-sx elen-contact">
                     <img src="img/avatar_4.jpg" alt="">
                     <h4>Luiso</h4>
-                </div>
+                </div> -->
             </div>
 
         </div>
