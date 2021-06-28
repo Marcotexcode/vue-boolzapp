@@ -1,0 +1,27 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    background: red;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.col-sx {
+    width: 35%;
+    height: 100%;
+    background-color: grey;
+}
+
+.col-dx {
+    width: 65%;
+    height: 100%;
+    background-color: green;
+}
