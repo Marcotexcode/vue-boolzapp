@@ -80,8 +80,8 @@
 
             <!-- NOME UTENTE IN CONVERSAZIONE -->
             <div class="head-dx">
-                <div  class="utente-sx utente-dx-conv">
-                    <img src="img/avatar_1.jpg" alt="">
+                <div v-for="(elementi, index) in contacts[counter]"  class="utente-sx utente-dx-conv">
+                    <img :src="elementi.avatar" alt="">
                     <div class="text-utente">
                         <h4>Michele</h4>
                         <span>Ultimo accesso oggi alle</span>
@@ -94,6 +94,9 @@
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
             </div>
+
+
+
 
             <!-- PARTE MESSAGGI GENERALI -->
             <div class="mess-gen">
