@@ -80,10 +80,10 @@
 
             <!-- NOME UTENTE IN CONVERSAZIONE -->
             <div class="head-dx">
-                <div v-for="(elementi, index) in contacts[counter]"  class="utente-sx utente-dx-conv">
-                    <img :src="elementi.avatar" alt="">
+                <div class="utente-sx utente-dx-conv">
+                    <img :src="contacts[counter].avatar" alt="">
                     <div class="text-utente">
-                        <h4>Michele</h4>
+                        <h4>{{contacts[counter].name}}</h4>
                         <span>Ultimo accesso oggi alle</span>
                     </div>         
                 </div>
