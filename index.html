@@ -96,8 +96,6 @@
             </div>
 
 
-
-
             <!-- PARTE MESSAGGI GENERALI -->
             <div class="mess-gen">
 
@@ -107,11 +105,12 @@
                 
             </div>
 
+             
             <!-- FORM MESSAGGI DA INVIARE -->
             <div class="form-inv">
                 <form action="">
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="messaggio" v-on:keyup.enter="addMex">
                     <i class="fas fa-microphone"></i>
                 </form>
             </div>

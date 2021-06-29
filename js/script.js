@@ -8,6 +8,7 @@ var app = new Vue ({
 
     data: {
         
+        messaggio: '',
         counter: 0,
 
         contacts: [
@@ -116,6 +117,11 @@ var app = new Vue ({
             this.counter = indice;
         },
 
+        addMex() {
+            this.contacts.push({name: this.messaggio});
+        }
     }
-
+    
 });
+
+console.log(contacts);
