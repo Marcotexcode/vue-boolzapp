@@ -8,13 +8,15 @@ var app = new Vue ({
 
     data: {
         
+        counter: 0,
+
         contacts: [
 
             {
                 name: 'Michele', 
                 avatar: 'img/avatar_1.jpg', 
                 visibile: true, 
-                message: [
+                messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         text: 'Hai portato a spasso il cane?', 
@@ -56,6 +58,7 @@ var app = new Vue ({
                     }
                 ],
             },
+
             {
                 name: 'Samuele', 
                 avatar: 'img/avatar_3.jpg', 
@@ -108,9 +111,8 @@ var app = new Vue ({
     },
 
     methods: {
-
-
-
+        
+       
     }
 
 });
