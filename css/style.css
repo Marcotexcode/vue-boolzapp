@@ -120,7 +120,7 @@ body {
     padding: 10px;
 }
 
-.searc-sx form {
+.searc-sx  {
     background-color: #fff;
     width: 100%;
     padding: 10px;
@@ -129,13 +129,13 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.searc-sx form i {
+.searc-sx  i {
     color: #b6b9bf;
     font-size: 20px;
     margin: 0px 20px;
 }
 
-.searc-sx form input {
+.searc-sx  input {
     width: 90%;
     height: 25px;
     border: none;
@@ -248,7 +248,7 @@ body {
 
 
  /* FORM MESSAGGI DA INVIARE  */
-.form-inv form {
+.form-inv  {
     width: 100%;
     height: 85px;
 
@@ -259,13 +259,13 @@ body {
     padding: 10px;
 }
 
-.form-inv form i {
+.form-inv  i {
     font-size: 30px;
     color: #6b7376;
     margin: 0px 20px;
 }
 
-.form-inv form input {
+.form-inv  input {
     width: 85%;
     height: 45px;
     padding: 10px;

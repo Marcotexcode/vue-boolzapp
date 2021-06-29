@@ -119,9 +119,9 @@ var app = new Vue ({
 
         addMex() {
             this.contacts.push({name: this.messaggio});
+            this.messaggio = '';
         }
     }
     
 });
 
-console.log(contacts);
