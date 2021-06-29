@@ -113,8 +113,20 @@ var app = new Vue ({
     methods: {
         
         change(indice) {
-            this.counter ==  indice;
-        }
+            this.counter = indice;
+        },
+
+         ottieniClasse(invio, ricevuto) {
+             if (this.status = recived) {
+
+                invio =  'mess-inviati';
+
+             } else  {
+
+                ricevuto =  'mess-ricevuti'
+             }
+        
+         }
     }
 
 });

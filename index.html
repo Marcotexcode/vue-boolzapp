@@ -62,8 +62,7 @@
             <!-- ELENCO CONTATTI  -->
             <div class="contatti">
                 
-                <div v-for="elementi in contacts" @click="change(elementi)" class="utente-sx elen-contact">
-                   
+                <div v-for="(elementi, index) in contacts" @click="change(index)" class="utente-sx elen-contact">
                     <img :src="elementi.avatar" :alt="elementi.name">
                     <h4>{{elementi.name}}</h4>
                     
@@ -81,10 +80,10 @@
 
             <!-- NOME UTENTE IN CONVERSAZIONE -->
             <div class="head-dx">
-                <div class="utente-sx utente-dx-conv">
+                <div  class="utente-sx utente-dx-conv">
                     <img src="img/avatar_1.jpg" alt="">
                     <div class="text-utente">
-                        <h4>Mchele</h4>
+                        <h4>Michele</h4>
                         <span>Ultimo accesso oggi alle</span>
                     </div>         
                 </div>
@@ -99,15 +98,15 @@
             <!-- PARTE MESSAGGI GENERALI -->
             <div class="mess-gen">
 
-                <div v-for="(elementi, index) in contacts[counter].messages" class="mess-inviati">
+                <div v-for="(elementi, index) in contacts[counter].messages" :class="ottieniClasse(invitato)"   >
+                    <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
+                </div>
+                                                                    <!-- :class="ottieniClasse(index)" -->
+                <div v-for="(elementi, index) in contacts[counter].messages" :class="ottieniClasse(ricev)" >
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
                 </div>
 
-                <!-- <div class="mess-ricevuti">
-                    <span>Ciao tutto bene grazie!!<p>10/01/2020 15:30:03</p></span>
-                </div>
-
-                <div class="mess-inviati">
+                <!-- <div class="mess-inviati">
                     <span>Ciao ciao come stai?<p>10/01/2020 15:30:03</p></span>
                 </div>
 
@@ -117,7 +116,7 @@
 
                 <div class="mess-ricevuti">
                     <span>Ciao tutto bene grazie!!<p>10/01/2020 15:30:03</p></span>
-                </div> -->
+                </div> --> 
 
             </div>
 
