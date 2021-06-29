@@ -98,26 +98,10 @@
             <!-- PARTE MESSAGGI GENERALI -->
             <div class="mess-gen">
 
-                <div v-for="(elementi, index) in contacts[counter].messages" :class="ottieniClasse(invitato)"   >
+                <div v-for="(elementi, index) in contacts[counter].messages" :class="(elementi.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'"   >
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
                 </div>
-                                                                    <!-- :class="ottieniClasse(index)" -->
-                <div v-for="(elementi, index) in contacts[counter].messages" :class="ottieniClasse(ricev)" >
-                    <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
-                </div>
-
-                <!-- <div class="mess-inviati">
-                    <span>Ciao ciao come stai?<p>10/01/2020 15:30:03</p></span>
-                </div>
-
-                <div class="mess-ricevuti">
-                    <span>Ciao tutto bene grazie!!<p>10/01/2020 15:30:03</p></span>
-                </div>
-
-                <div class="mess-ricevuti">
-                    <span>Ciao tutto bene grazie!!<p>10/01/2020 15:30:03</p></span>
-                </div> --> 
-
+                
             </div>
 
             <!-- FORM MESSAGGI DA INVIARE -->
