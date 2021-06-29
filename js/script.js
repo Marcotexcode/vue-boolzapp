@@ -118,6 +118,7 @@ var app = new Vue ({
         },
 
         addMex() {
+            // Trovare un modo per poter aggiungere la var oggetto messaggio nell arr message
             this.contacts.push({name: this.messaggio});
             this.messaggio = '';
         }
