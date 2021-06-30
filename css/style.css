@@ -256,7 +256,8 @@ body {
     color: #b1b1b1;
 }
 
-.mess-inviati i p {
+.mess-inviati i p, .mess-ricevuti i p {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: none;
     position: absolute;
     right: 15px;
@@ -265,7 +266,7 @@ body {
     color: rgb(65, 64, 64);
 }
 
-.mess-inviati i:hover p {
+.mess-inviati i:hover p, .mess-ricevuti i:hover p{
     display: block;
 }
 
