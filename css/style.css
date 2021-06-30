@@ -258,7 +258,7 @@ body {
 
 .mess-inviati i p, .mess-ricevuti i p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: none;
+    /* display: none; */
     position: absolute;
     right: 15px;
     background-color: #fff;

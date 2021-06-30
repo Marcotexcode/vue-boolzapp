@@ -143,6 +143,12 @@ var app = new Vue ({
             // this.messaggio == this.name;
 
         },
+
+        remove(elemento) {
+
+            this.contacts.splice(elemento, 1);
+
+        }
                 
     }
     
