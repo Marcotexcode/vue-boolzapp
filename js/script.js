@@ -121,7 +121,16 @@ var app = new Vue ({
 
             this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received'});
             this.messaggio = '';
+        },
+
+        addMexAuto() {
+
+            if(this.text == this.messaggio){
+                this.contacts[this.counter].messages.push({text: 'ok', status: 'sent'});
+            }
+
         }
+        
     }
     
 });
