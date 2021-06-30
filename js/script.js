@@ -126,9 +126,9 @@ var app = new Vue ({
                 if(this.text = this.messaggio){
 
                     var time = setTimeout(() => {
-                        this.contacts[this.counter].messages.push({text: 'ok', status: 'sent'});
+                        this.contacts[this.counter].messages.push({text: 'ok', status: 'sent', date: dayjs().format('DD/MM/YYYY H:mm:ss')});
                     }, 1000);
-                    
+
                 }
 
                 
