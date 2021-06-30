@@ -79,7 +79,7 @@
             <!-- NOME UTENTE IN CONVERSAZIONE -->
             <div class="head-dx">
                 <div class="utente-sx utente-dx-conv">
-                    <img :src="contacts[counter].avatar" alt="">
+                    <img :src="contacts[counter].avatar" :alt="contacts[counter].avatar">
                     <div class="text-utente">
                         <h4>{{contacts[counter].name}}</h4>
                         <span>Ultimo accesso oggi alle</span>
@@ -97,7 +97,7 @@
             <!-- PARTE MESSAGGI GENERALI -->
             <div class="mess-gen">
 
-                <div v-for="(elementi, index) in contacts[counter].messages" :class="(elementi.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'"   >
+                <div v-for="(elementi, index) in contacts[counter].messages" :class="(elementi.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'">
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
                 </div>
                 
@@ -107,7 +107,7 @@
             <!-- FORM MESSAGGI DA INVIARE -->
             <div class="form-inv">
                 <i class="far fa-smile"></i>
-                <input type="text" placeholder="Scrivi un messaggio" v-model="messaggio" v-on:keyup.enter="addMex">
+                <input  type="text" placeholder="Scrivi un messaggio" v-model="messaggio" v-on:keyup.enter="addMex">
                 <i class="fas fa-microphone"></i>
             </div>
 
