@@ -119,7 +119,7 @@ var app = new Vue ({
 
         addMex() {
 
-            this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received'});
+            this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:s')});
 
             if(this.text = this.messaggio){
                 this.contacts[this.counter].messages.push({text: 'ok', status: 'sent'});
