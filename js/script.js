@@ -119,14 +119,23 @@ var app = new Vue ({
 
         addMex() {
 
-            this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:s')});
+            this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:ss')});
 
-            if(this.text = this.messaggio){
-                this.contacts[this.counter].messages.push({text: 'ok', status: 'sent'});
-            }
+           
 
+                if(this.text = this.messaggio){
 
+                    var time = setTimeout(() => {
+                        this.contacts[this.counter].messages.push({text: 'ok', status: 'sent'});
+                    }, 1000);
+                    
+                }
+
+                
+
+            
             this.messaggio = '';
+            
         },
 
         
