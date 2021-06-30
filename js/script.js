@@ -136,10 +136,11 @@ var app = new Vue ({
 
         search() {
 
-            contact.forEach((element) => {
-                console.log(element);
-            });
 
+            // contact.forEach((element) => {
+            //     console.log(element);
+            // });
+            this.messaggio.name.includes(this.ricerca);
             // this.messaggio == this.name;
 
         },
@@ -149,6 +150,8 @@ var app = new Vue ({
             this.contacts.splice(elemento, 1);
 
         }
+
+        
                 
     }
     
