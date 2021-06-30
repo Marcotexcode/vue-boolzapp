@@ -9,6 +9,7 @@ var app = new Vue ({
     data: {
         
         messaggio: '',
+        ricerca: '',
         counter: 0,
 
         contacts: [
@@ -33,8 +34,7 @@ var app = new Vue ({
                         text: 'Tutto fatto!',
                         status: 'received'
                     }
-                ],
-            
+                ],           
             },
 
             {
@@ -81,7 +81,6 @@ var app = new Vue ({
                         status: 'received'
                     }
                 ],
-            
             },
 
             {
@@ -114,6 +113,7 @@ var app = new Vue ({
     methods: {
         
         change(indice) {
+
             this.counter = indice;
         },
 
@@ -121,24 +121,30 @@ var app = new Vue ({
 
             this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:ss')});
 
-           
-
                 if(this.text = this.messaggio){
 
                     var time = setTimeout(() => {
-                        this.contacts[this.counter].messages.push({text: 'ok', status: 'sent', date: dayjs().format('DD/MM/YYYY H:mm:ss')});
+
+                        this.contacts[this.counter].messages.push({text: 'Ok', status: 'sent', date: dayjs().format('DD/MM/YYYY H:mm:ss')});
+                    
                     }, 1000);
 
                 }
 
-                
-
-            
             this.messaggio = '';
             
         },
 
+        search() {
+
+            
+
+        }
         
+
+
+
+
         
     }
     
