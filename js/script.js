@@ -136,24 +136,27 @@ var app = new Vue ({
 
         search() {
 
+            return this.contacts.filter(
 
-            // contact.forEach((element) => {
-            //     console.log(element);
-            // });
-            this.messaggio.name.includes(this.ricerca);
-            // this.messaggio == this.name;
+                element => {
+
+                    return element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
+            
+                }
+        
+            );
 
         },
 
-        remove(elemento) {
+        // remove(elemento) {
 
-            this.contacts.splice(elemento, 1);
+        //     this.contacts.splice(elemento, 1);
 
-        }
-
-        
+        // }
                 
     }
+
+    
     
 });
 

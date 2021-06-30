@@ -18,53 +18,67 @@
         <!-- COLONNA SINISTRA  -->
         <div class="col-sx">
 
+            
             <!-- NOME UTENTE -->
             <div class="head-sx">
+
                 <div class="utente-sx">
+
                     <img src="img/avatar_io.jpg" alt="">
+
                     <h4>Nome Utente </h4>
+
                 </div>
 
                 <div class="utente-dx">
+
                     <i class="fas fa-circle-notch"></i>
+
                     <i class="fas fa-comment-alt"></i>
+
                     <i class="fas fa-ellipsis-v"></i>
+
                 </div>
                 
                 
             </div>
-
 
 
             <!-- NOTIFICHE -->
             <div class="notific-sx">
+
                 <i class="fas fa-bell-slash"></i>
+
                 <div class="text-notif-sx">
+
                     <span>Ricevi notifiche di nuovi messaggi</span>
+
                     <a href="">Attiva notifiche desktop</a>
+
                 </div>
                 
             </div>
 
 
-
-
             <!-- RICERCA CONTATTI  -->
             <div class="searc-sx">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="ricerca" @keydown.enter="search()">
+
+                <i class="fas fa-search"></i>
+
+                <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="ricerca" @keydown.enter="search()">
+
             </div>
-
-
 
 
             <!-- ELENCO CONTATTI  -->
             <div class="contatti">
                 
                 <div v-for="(elementi, index) in contacts" @click="change(index)" class="utente-sx elen-contact">
+
                     <img :src="elementi.avatar" :alt="elementi.name">
+
                     <h4>{{elementi.name}}</h4>
-                    
+     
                 </div>
 
             </div>
@@ -77,21 +91,34 @@
         <!-- COLONNA DESTRA -->
         <div class="col-dx">
 
+
             <!-- NOME UTENTE IN CONVERSAZIONE -->
             <div class="head-dx">
+
                 <div class="utente-sx utente-dx-conv">
+
                     <img :src="contacts[counter].avatar" :alt="contacts[counter].avatar">
+
                     <div class="text-utente">
+
                         <h4>{{contacts[counter].name}}</h4>
+
                         <span>Ultimo accesso oggi alle</span>
+
                     </div>         
+
                 </div>
 
                 <div class="icon-utente-dx">
+
                     <i class="fas fa-search"></i>
+
                     <i class="fas fa-paperclip"></i>
+
                     <i class="fas fa-ellipsis-v"></i>
+
                 </div>
+
             </div>
 
 
@@ -99,20 +126,26 @@
             <div class="mess-gen">
 
                 <div v-for="(elementi, index) in contacts[counter].messages" :class="(elementi.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'">
+                   
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
+                   
                     <i class="fas fa-chevron-down"><p @click="remove(contacts[counter])">remove</p></i>
+               
                 </div>
                 
             </div>
 
-             
+            
             <!-- FORM MESSAGGI DA INVIARE -->
             <div class="form-inv">
-                <i class="far fa-smile"></i>
-                <input  type="text" placeholder="Scrivi un messaggio"  v-model="messaggio" v-on:keyup.enter="addMex">
-                <i class="fas fa-microphone"></i>
-            </div>
 
+                <i class="far fa-smile"></i>
+
+                <input  type="text" placeholder="Scrivi un messaggio"  v-model="messaggio" v-on:keyup.enter="addMex">
+
+                <i class="fas fa-microphone"></i>
+
+            </div>
 
         </div>
 
@@ -122,5 +155,7 @@
 
 
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
