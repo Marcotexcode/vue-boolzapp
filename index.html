@@ -100,6 +100,7 @@
 
                 <div v-for="(elementi, index) in contacts[counter].messages" :class="(elementi.status == 'received') ? 'mess-inviati' : 'mess-ricevuti'">
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
+                    <i class="fas fa-chevron-down"><p>remove</p></i>
                 </div>
                 
             </div>

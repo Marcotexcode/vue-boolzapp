@@ -224,6 +224,7 @@ body {
 .mess-inviati {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .mess-inviati span {
@@ -234,16 +235,39 @@ body {
 .mess-ricevuti {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .mess-ricevuti span {
     background-color: white;
 }
 
+.mess-inviati i {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #b1b1b1;
+}
 
+.mess-ricevuti i {
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    color: #b1b1b1;
+}
 
+.mess-inviati i p {
+    display: none;
+    position: absolute;
+    right: 15px;
+    background-color: #fff;
+    padding: 10px;
+    color: rgb(65, 64, 64);
+}
 
-
+.mess-inviati i:hover p {
+    display: block;
+}
 
 
 

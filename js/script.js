@@ -13,7 +13,6 @@ var app = new Vue ({
         counter: 0,
 
         contacts: [
-
             {
                 name: 'Michele', 
                 avatar: 'img/avatar_1.jpg', 
@@ -107,7 +106,7 @@ var app = new Vue ({
             },
 
         ]
-
+        
     },
 
     methods: {
@@ -137,15 +136,14 @@ var app = new Vue ({
 
         search() {
 
-            
+            contact.forEach((element) => {
+                console.log(element);
+            });
 
-        }
-        
+            // this.messaggio == this.name;
 
-
-
-
-        
+        },
+                
     }
     
 });
