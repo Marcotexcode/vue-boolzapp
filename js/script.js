@@ -16,7 +16,7 @@ var app = new Vue ({
             {
                 name: 'Michele', 
                 avatar: 'img/avatar_1.jpg', 
-                visibile: true, 
+                visible: true, 
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -62,7 +62,7 @@ var app = new Vue ({
             {
                 name: 'Samuele', 
                 avatar: 'img/avatar_3.jpg', 
-                visibile: true, 
+                visible: true, 
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -152,7 +152,6 @@ var app = new Vue ({
                     element.visible = false;
 
                 }
-
 
             });
 
