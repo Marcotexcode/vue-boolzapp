@@ -73,11 +73,11 @@
             <!-- ELENCO CONTATTI  -->
             <div class="contatti">
                 
-                <div v-for="(elementi, index) in contacts" v-if="visible" @click="change(index)" class="utente-sx elen-contact">
+                <div v-for="(elementi, index) in contacts" v-if="elementi.visible" @click="change(index)" class="utente-sx elen-contact">
 
                     <img :src="elementi.avatar" :alt="elementi.name">
 
-                    <h4>{{elementi.name}} ({{elementi.visible}})</h4>
+                    <h4>{{elementi.name}}</h4>
      
                 </div>  
 

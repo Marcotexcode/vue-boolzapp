@@ -154,27 +154,7 @@ var app = new Vue ({
                 }
 
             });
-
-
-
-
-
-
-
-
-
-            //  return this.contacts.filter(
-
-            //      element => {
-
-            //          return element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
-            
-            //      }
-        
-            //     );
-
-            // this.contacts.filter(element => element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
-
+           
         },
 
          
