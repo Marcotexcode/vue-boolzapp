@@ -118,17 +118,22 @@ var app = new Vue ({
 
         addMex() {
 
-            this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:ss')});
+            if (this.messaggio != '') {
 
-                if(this.text = this.messaggio){
+                this.contacts[this.counter].messages.push({text: this.messaggio, status: 'received',date: dayjs().format('DD/MM/YYYY H:mm:ss')});
 
-                    var time = setTimeout(() => {
+            }
 
-                        this.contacts[this.counter].messages.push({text: 'Ok', status: 'sent', date: dayjs().format('DD/MM/YYYY H:mm:ss')});
-                    
-                    }, 1000);
 
-                }
+            if(this.text = this.messaggio){
+
+                setTimeout(() => {
+
+                    this.contacts[this.counter].messages.push({text: 'Ok', status: 'sent', date: dayjs().format('DD/MM/YYYY H:mm:ss')});
+                
+                }, 1000);
+
+            }
 
             this.messaggio = '';
             
