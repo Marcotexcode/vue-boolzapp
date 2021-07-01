@@ -137,8 +137,10 @@ body {
 
 .searc-sx  input {
     width: 90%;
-    height: 25px;
+    height: 30px;
     border: none;
+    padding: 10px;
+    outline: none;
 }
 
 
