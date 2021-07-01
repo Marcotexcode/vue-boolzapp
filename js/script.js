@@ -156,14 +156,15 @@ var app = new Vue ({
             });
            
         },
+  
+        remove(elemento) {
 
-         
-        // remove(elemento) {
+            this.contacts[this.counter].messages.splice(elemento,1);
+  
+        },
 
-        //     this.contacts.splice(elemento, 1);
+        
 
-        // }
-                
     },
 
     

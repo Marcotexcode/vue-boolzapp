@@ -103,7 +103,7 @@
 
                         <h4>{{contacts[counter].name}}</h4>
 
-                        <span>Ultimo accesso oggi alle</span>
+                        <span>Ultimo accesso oggi alle </span>
 
                     </div>         
 
@@ -129,7 +129,7 @@
                    
                     <span>{{elementi.text}}<p>{{elementi.date}}</p></span>
                    
-                    <i class="fas fa-chevron-down"><p @click="remove(contacts[counter])">remove</p></i>
+                    <i class="fas fa-chevron-down"><p class="click-remove" @click="remove(index)">remove</p></i>
                
                 </div>
                 
