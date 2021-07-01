@@ -141,27 +141,52 @@ var app = new Vue ({
 
         search() {
 
-            return this.contacts.filter(
+            this.contacts.forEach((element) => {
+                
+                if (element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase())) {
 
-                element => {
+                    element.visible = true;
 
-                    return element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
-            
+                } else {
+
+                    element.visible = false;
+
                 }
+
+
+            });
+
+
+
+
+
+
+
+
+
+            //  return this.contacts.filter(
+
+            //      element => {
+
+            //          return element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
+            
+            //      }
         
-            );
+            //     );
+
+            // this.contacts.filter(element => element.name.toLocaleLowerCase().includes(this.ricerca.toLowerCase());
 
         },
 
+         
         // remove(elemento) {
 
         //     this.contacts.splice(elemento, 1);
 
         // }
                 
-    }
+    },
 
-    
     
 });
 
