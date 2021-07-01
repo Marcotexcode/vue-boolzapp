@@ -161,12 +161,9 @@ var app = new Vue ({
 
             this.contacts[this.counter].messages.splice(elemento,1);
   
-        },
-
-        
+        }
 
     },
 
-    
 });
 
